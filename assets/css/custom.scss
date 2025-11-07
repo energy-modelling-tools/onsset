@@ -128,10 +128,10 @@ $header-accent-color: #3490dc; // Sky blue accent color
       padding: 1rem 0 1rem 0; // 
     }
     
-    // 当移动菜单展开时，为父容器增加底部空间
+    // Add bottom space when mobile menu is expanded
     &.menu-expanded {
       @media (max-width: 768px) {
-        padding-bottom: 12rem; // 为展开的菜单留出空间
+        padding-bottom: 12rem; // Reserve space for expanded menu
       }
     }
   }
@@ -150,7 +150,7 @@ $header-accent-color: #3490dc; // Sky blue accent color
     position: relative;
     
     @media (max-width: 768px) {
-      justify-content: center; // 移动端居中布局
+      justify-content: center; // Center layout on mobile
       margin-bottom: 0.5rem;
     }
   }
@@ -161,7 +161,7 @@ $header-accent-color: #3490dc; // Sky blue accent color
     
     @media (max-width: 768px) {
       width: 60px;
-      // 在移动端时，logo和title将在父级居中布局中自动排列
+      // On mobile, logo and title will auto-arrange in centered parent layout
     }
   }
   
@@ -174,11 +174,11 @@ $header-accent-color: #3490dc; // Sky blue accent color
     width: auto;
     
     @media (max-width: 768px) {
-      // 移动端时，取消绝对定位，使用普通的flex布局
+      // On mobile, cancel absolute positioning, use normal flex layout
       position: static;
       transform: none;
       left: auto;
-      margin-left: 1rem; // 与logo之间的间距
+      margin-left: 1rem; // Spacing from logo
     }
     
     a {
@@ -252,7 +252,7 @@ $header-accent-color: #3490dc; // Sky blue accent color
       }
     }
     
-    // 展开状态的样式
+    // Expanded state styles
     &[open] .mobile-menu-btn {
       background-color: rgba($header-accent-color, 0.1);
       border-color: rgba($header-accent-color, 0.2);
@@ -285,9 +285,9 @@ $header-accent-color: #3490dc; // Sky blue accent color
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap; // 不换行，保持在一行
-    gap: 0.3rem; // 减小间距以适应更多按钮
-    overflow-x: auto; // 如果太宽，允许水平滚动
+    flex-wrap: nowrap; // No wrap, keep in one line
+    gap: 0.3rem; // Reduce spacing to fit more buttons
+    overflow-x: auto; // Allow horizontal scroll if too wide
     
     @media (max-width: 768px) {
       flex-direction: column;
@@ -297,20 +297,20 @@ $header-accent-color: #3490dc; // Sky blue accent color
     
     li {
       display: inline-block;
-      flex-shrink: 0; // 防止按钮缩小
+      flex-shrink: 0; // Prevent button shrinking
       
       a {
-        font-size: 0.9em; // 稍微减小字体以适应更多按钮
+        font-size: 0.9em; // Slightly reduce font to fit more buttons
         font-weight: 500;
-        padding: 0.6rem 1.2rem; // 减小内边距
+        padding: 0.6rem 1.2rem; // Reduce padding
         border-radius: 20px;
         transition: all 0.3s ease;
         display: inline-flex;
         align-items: center;
-        gap: 0.4rem; // 减小图标和文字间距
+        gap: 0.4rem; // Reduce spacing between icon and text
         background: transparent;
         border: 1px solid transparent;
-        white-space: nowrap; // 防止文字换行
+        white-space: nowrap; // Prevent text wrapping
         
         &:hover {
           background-color: rgba($header-accent-color, 0.1);
@@ -325,7 +325,7 @@ $header-accent-color: #3490dc; // Sky blue accent color
         svg {
           fill: currentColor;
           transition: all 0.3s ease;
-          width: 16px; // 固定图标大小
+          width: 16px; // Fixed icon size
           height: 16px;
         }
         
@@ -603,24 +603,24 @@ td.does-not-support { color: $red-500; }
     border: 1px solid #e1e4e8;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    min-width: 320px; // 增加最小宽度
-    width: max-content; // 自适应内容宽度
-    max-width: 95vw; // 不超过视窗宽度的95%
+    min-width: 320px; // Increase min width
+    width: max-content; // Auto-fit content width
+    max-width: 95vw; // Not exceed 95% of viewport width
     margin-top: 0.5rem;
     padding: 0.5rem 0;
     z-index: 1000;
     
-    // 移动端优化
+    // Mobile optimization
     @media (max-width: 768px) {
-      min-width: 300px; // 增加移动端最小宽度
-      width: 90vw; // 使用视窗宽度的90%
-      max-width: 400px; // 设置最大宽度
-      // 居中定位由父级details控制
+      min-width: 300px; // Increase mobile min width
+      width: 90vw; // Use 90% of viewport width
+      max-width: 400px; // Set max width
+      // Centering controlled by parent details
     }
     
     @media (max-width: 480px) {
       min-width: 280px;
-      width: 95vw; // 小屏幕使用更大比例
+      width: 95vw; // Use larger proportion on small screens
       max-width: 350px;
     }
     
@@ -635,12 +635,12 @@ td.does-not-support { color: $red-500; }
         text-decoration: none;
         font-size: 1rem;
         font-weight: 500;
-        white-space: nowrap; // 防止文字换行
+        white-space: nowrap; // Prevent text wrapping
         transition: all 0.3s ease;
         border-radius: 6px;
         margin: 0 0.75rem;
         
-        // Icon和文字的布局
+        // Icon and text layout
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -649,7 +649,7 @@ td.does-not-support { color: $red-500; }
           fill: currentColor;
           width: 16px;
           height: 16px;
-          flex-shrink: 0; // 防止图标缩小
+          flex-shrink: 0; // Prevent icon shrinking
         }
         
         &:hover {
@@ -785,7 +785,7 @@ td.does-not-support { color: $red-500; }
   margin: 0.5rem 0.5rem 0 0;
   padding: 0;
   list-style: none;
-  display: flex; // 改为flex，通过max-height控制显示
+  display: flex; // Change to flex, control display via max-height
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
@@ -842,7 +842,7 @@ td.does-not-support { color: $red-500; }
 // Show mobile navigation when menu is open
 .mobile-menu-toggle.menu-open .mobile-navigation {
   display: flex;
-  max-height: 500px; // 设置最大高度以允许展开
+  max-height: 500px; // Set max height to allow expansion
   padding: 0.75rem;
   margin-top: 0.5rem;
   opacity: 1;
