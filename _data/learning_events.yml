@@ -29,12 +29,6 @@ events:
     description: "Held from April 11–28 2023 as a hybrid event (online and at the University of Namibia)."
     outputs: []
 
-  - title: "EMP-A 2021 – Online"
-    image: "../assets/img/EMP/EMP-LAC_2021.JPG"
-    alt: "EMP-A 2021"
-    description: "Held from 22 November – 10 December 2021."
-    outputs: []
-
   - title: "EMP-A 2019 – Cape Town"
     image: "../assets/img/EMP/EMP-LAC_2024.JPG"
     alt: "EMP-A 2019"
@@ -53,6 +47,12 @@ events:
     description: "Held from 12–23 August 2024 at ICTP in Trieste, Italy."
     outputs: []
 
+  - title: "EMP-A 2021 – Online"
+    image: "../assets/img/EMP/EMP-LAC_2021.JPG"
+    alt: "EMP-A 2021"
+    description: "Held from 22 November – 10 December 2021."
+    outputs: []
+    
 adjacent_events:
   - country: "Ethiopia"
     flag: "🇪🇹"
