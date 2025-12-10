@@ -76,6 +76,9 @@ permalink: /learning_capacity/
         {% for event in site.data.learning_events.events %}
         <div class="col-md-4 float-left animate-in mb-4">
           <h3 class="alt-h3 mb-3">{{ event.title }}</h3>
+          <p><a href="{{ event.url | default: '#' }}" target="_blank">
+            <img src="{{ event.image | relative_url }}" class="img-fluid animate-in" alt="{{ event.alt }}"/>
+          </a></p>
           <p class="text-gray">{{ event.description }}</p>
 
           {% if event.outputs and event.outputs.size > 0 %}
