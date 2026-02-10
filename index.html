@@ -118,10 +118,12 @@ permalink: /
     <p class="f2-light text-white">
       {% for platform in site.data.social_media %}
       <a href="{{ platform.url }}" class="px-2" style="text-decoration: none !important;" title="{{ platform.name }}" target="_blank" rel="noopener noreferrer">
-        {% if platform.icon contains 'bi-' %}
-          <i class="{{ platform.icon }} logo logo-hover py-3" style="font-size: 32px"></i>
+        {% assign icon = platform.icon | default: "" %}
+        {% if icon contains ".png" or icon contains ".jpg" or icon contains ".jpeg" or icon contains ".svg" %}
+          <img src="{{ icon | relative_url }}" alt="{{ platform.name }}" style="height:32px;width:32px;object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+          <span style="display: none; color: white; font-size: 16px; vertical-align: middle;">{{ platform.name }}</span>
         {% else %}
-          <img src="{{ platform.icon | relative_url }}" alt="{{ platform.name }}" class="logo logo-hover py-3" style="height: 64px !important; width: 64px !important; max-width: 64px !important; min-width: 64px !important; display: inline-block !important; object-fit: contain !important; vertical-align: middle; opacity: 1 !important; visibility: visible !important; background: transparent; margin-top: -9px !important;margin-left: -16px !important;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">          <span style="display: none; color: white; font-size: 16px; vertical-align: middle;">{{ platform.name }}</span>
+          <i class="{{ icon }} logo logo-hover py-3" style="font-size: 32px"></i>
         {% endif %}
       </a>
     {% endfor %}
