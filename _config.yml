@@ -7,7 +7,7 @@
 
 # global settings
 title: OnSSET
-logo: "/assets/img/home_page_logo.png" 
+logo: "/assets/img/logos/OnSSET.svg"
 description: "GitHub helps government build software better, together"
 baseurl: "/onsset" # the subpath of your site (matching new repo name)
 permalink: "/stories/:title"
