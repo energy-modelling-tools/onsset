@@ -14,10 +14,10 @@ permalink: /learning_capacity/
 
     <!-- Open University Course -->
     <div class="mt-4 animate-in">
-      <h3 class="alt-h3 mt-3" style="font-size: 1.25rem;">
+      <h3 class="alt-h3 mt-3">
         📘 Open University Course on Electricity Access Modelling using OnSSET
       </h3>
-      <p class="animate-in" style="font-size: 0.95rem;">
+      <p class="animate-in">
         Discover the fundamentals of geospatial energy modelling and learn how to build your own electrification analysis. 
         This course introduces key concepts in integrating spatial data into energy planning, offering insights into global energy 
         resources and their geospatial characteristics. You will gain hands-on experience with the Open Source Spatial Electrification 
@@ -26,8 +26,7 @@ permalink: /learning_capacity/
       </p>
       <p class="animate-in">
         <a href="https://www.open.edu/openlearncreate/course/view.php?id=11707" 
-           class="btn btn-outline-primary sky-blue-accent" 
-           style="border-color: #3490dc; color: #3490dc;">
+           class="btn btn-outline-primary sky-blue-accent">
            Access Course →
         </a>
       </p>
@@ -35,8 +34,8 @@ permalink: /learning_capacity/
 
     <!-- Future Learning Tools -->
     <div class="mt-5 animate-in">
-      <h3 class="alt-h3" style="font-size: 1.25rem;">🧰 User Interface / Download Links</h3>
-      <p class="animate-in" style="font-size: 0.95rem;">
+      <h3 class="alt-h3">🧰 User Interface / Download Links</h3>
+      <p class="animate-in">
         <em>Not yet available</em> — A Modelling User Interface for OnSSET is under development. 
         This interface will enhance your skills in energy systems modelling with user-friendly features 
         and additional learning materials, enabling comprehensive national-level analysis.
@@ -44,8 +43,8 @@ permalink: /learning_capacity/
     </div>
 
     <div class="mt-4 animate-in">
-      <h3 class="alt-h3" style="font-size: 1.25rem;">🚀 Coming Soon</h3>
-      <ul class="animate-in" style="font-size: 0.95rem;">
+      <h3 class="alt-h3">🚀 Coming Soon</h3>
+      <ul class="animate-in">
         <li>Starter Data Kits</li>
         <li>Flatpack Program</li>
         <li>Energy Modelling Community (YouTube Playlist)</li>
@@ -54,10 +53,10 @@ permalink: /learning_capacity/
 
     <!-- EMP Section -->
     <div class="mt-5 animate-in">
-      <h3 class="alt-h3" style="font-size: 1.25rem;">
+      <h3 class="alt-h3">
         🌍 Energy Modelling Platforms (EMPs)
       </h3>
-      <p class="animate-in" style="font-size: 0.95rem;">
+      <p class="animate-in">
         OnSSET has been part of all EMP-G and EMP-A events since 2018, teaching the tool to over 
         200 analysts worldwide. These sessions build national capacity in developing least-cost 
         electrification pathways and integrating spatial analysis into energy system planning.
@@ -70,7 +69,7 @@ permalink: /learning_capacity/
 
     <!-- EMP Events Loop -->
     <div class="container-lg p-responsive py-4 py-md-6 my-lg-6 animate-in">
-      <h3 class="alt-h3 text-center mb-3" style="font-size: 1.25rem;">🌍 Explore EMP Events</h3>
+      <h3 class="alt-h3 text-center mb-3">🌍 Explore EMP Events</h3>
 
       <div class="clearfix gutter-spacious">
         {% for event in site.data.learning_events.events %}
