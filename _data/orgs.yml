@@ -1,7 +1,7 @@
 
 partners:
   - name: worldbank
-    logo: /assets/img/partners/WBhorizontal.png
+    logo: /assets/img/partners/worldbank.svg
     display_name: World Bank Group
     url: https://www.worldbank.org/ext/en/home
 
@@ -11,12 +11,12 @@ partners:
     url: https://www.esmap.org/
 
   - name: seforall
-    logo: /assets/img/partners/SEforALL.png
+    logo: /assets/img/partners/seforall.svg
     display_name: Sustainable Energy for All (SEforALL)
     url: https://www.seforall.org/
 
   - name: kth
-    logo: /assets/img/partners/KTH.png
+    logo: /assets/img/partners/kth.svg
     display_name: KTH Royal Institute of Technology
     url: https://www.energy.kth.se/energy-systems/division-of-energy-systems-1.937036
 
@@ -31,11 +31,11 @@ partners:
     url: https://www.wri.org/
 
   - name: irena
-    logo: /assets/img/partners/IRENA.png
+    logo: /assets/img/partners/irena.svg
     display_name: International Renewable Energy Agency (IRENA)
     url: https://www.irena.org/
 
   - name: ccg
-    logo: /assets/img/partners/CCG.png
+    logo: /assets/img/partners/ccg.svg
     display_name: Climate Compatible Growth (CCG)
     url: https://climatecompatiblegrowth.com/
